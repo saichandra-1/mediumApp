@@ -15,7 +15,7 @@ export function Fullblog(){
 
 
     useEffect(() => {
-        if (id) {  // Check if id is defined
+        if (id) {  
           axios
             .get(`${BACKEND_URL}/blog/${id}`, {
               headers: {

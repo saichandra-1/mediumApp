@@ -1,5 +1,4 @@
 # prod
-dist/
 
 # dev
 .yarn/
