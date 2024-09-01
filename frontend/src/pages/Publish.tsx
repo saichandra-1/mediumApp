@@ -85,7 +85,7 @@ function TitleInput({ setBlog }: TitleInputProps) {
             id="large-input"
             className="block w-full p-4 text-gray-900 border rounded-lg bg-gray-100 text-2xl outline-none"
             onChange={(e) => {
-              setBlog((prevBlog:any) => ({
+              setBlog((prevBlog:createpostschema) => ({
                 ...prevBlog,
                 title: e.target.value,
               }));
@@ -113,7 +113,7 @@ function BodyInput({ setBlog }: BodyInputProps) {
           <textarea
             className="resize block w-full p-4 text-gray-900 bg-gray-100 text-lg outline-none"
             onChange={(e) =>
-              setBlog((prevBlog:any) => ({
+              setBlog((prevBlog:createpostschema) => ({
                 ...prevBlog,
                 content: e.target.value,
               }))
