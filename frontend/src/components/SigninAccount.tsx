@@ -39,7 +39,7 @@ export function SigninAccount(){
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         seterrors(false)
         const { name, value } = e.target;
-        setsignininput((prev) => ({
+        setsignininput((prev:signininputschema) => ({
             ...prev,
             [name]: value,
         }));
