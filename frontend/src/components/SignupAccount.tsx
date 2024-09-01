@@ -40,7 +40,7 @@ export function SignupAccount(){
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         seterrors(false)
         const { name, value } = e.target;
-        setsignupinput((prev) => ({
+        setsignupinput((prev:any) => ({
             ...prev,
             [name]: value,
         }));
